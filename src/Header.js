@@ -4,9 +4,16 @@ import SearchIcon from "@material-ui/icons/Search";
 import { ShoppingBasket } from '@material-ui/icons';
 import { Link } from "react-router-dom"
 import { useStateValue } from './StateProvider';
+import { auth } from "./firebase";
 
 function Header() {
-    const [{ basket }] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
+
+    const handleAuthentication = () => {
+        if (user) {
+            auth.signOut();
+        }
+    }
 
     return (
         <div className="header">
@@ -20,14 +27,16 @@ function Header() {
                 {/* logo */}
             </div>
             <div className="header_nav">
-                <div className="header_option">
-                    <span className="header_optionLineOne">
-                        Hello Guest
-                    </span>
-                    <span className="header_optionLineTwo">
-                        Sign In
-                    </span>
-                </div>
+                <Link to={!user && "/login"}>
+                    <div onClick={handleAuthentication} className="header_option">
+                        <span className="header_optionLineOne">
+                            Hello Guest
+                        </span>
+                        <span className="header_optionLineTwo">
+                            {user ? 'Sign out' : 'Sign In'}
+                        </span>
+                    </div>
+                </Link>
                 <div className="header_option">
                      <span className="header_optionLineOne">
                         Returns
@@ -47,17 +56,17 @@ function Header() {
                 <Link to="/checkout">
                     <div className="header_optionBasket">
                         <ShoppingBasket />
-                        <span className='header_optionlineTwo header_basketCount'>{ basket?.length }</span>
+                        <span className='header_optionLineTwo header_basketCount'>{ basket?.length }</span>
                     </div>
                 </Link>
                 
                 <Link>
                     <div className="header_option">
                      <span className="header_optionLineOne">
-                        Taxi
+                        Food
                     </span>
                     <span className="header_optionLineTwo">
-                        Driver
+                        Order
                     </span>
                 </div>
                 </Link>

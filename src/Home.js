@@ -9,56 +9,57 @@ function Home() {
                 <img
                     className='home_image'
                     src="https://m.media-amazon.com/images/I/61lJ3xlQX2L._SX3740_.jpg" alt="" />
-                    <div className="home_row">
+                
+                <div className="home__row">
                     <Product
                         id="12321341"
-                        title="suinsist Smart Watch 2021 with Call, Fitness Tracker with Sleep Monitor, Activity Tracker with 1.54 Inch Touch HD Screen, ..."
-                        price= {29.99}
-                        image="https://m.media-amazon.com/images/I/71HCTiWkPSS._AC_UY218_.jpg"
+                        title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
+                        price={11.96}
                         rating={5}
-                    />                      
+                        image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
+                    />
                     <Product
-                        id="49530094"
-                        title="Samsung Tab A7 Lite Gray 32GB (SM-T220NZAAXAR)"
-                        price={139}
-                        image="https://m.media-amazon.com/images/I/819hAP4xoGS._AC_SX450_.jpg"
-                        rating={5}
-                    />                     
-                    </div>
+                        id="49538094"
+                        title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
+                        price={239.0}
+                        rating={4}
+                        image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+                    />
+                </div>
 
-                    <div className="home_row">                        
-                    <Product
-                        id="23445938"
-                        title="HP 15-inch Laptop, 11th Generation Intel Core i5-1135G7, Intel Iris Xe Graphics, 8 GB RAM, 256 GB SSD, Windows 11 Home (Natural silver)"
-                        price={513}
-                        image="https://m.media-amazon.com/images/I/71RD3vsjIYL._AC_SX466_.jpg"
-                        rating={5}
-                    />                        
-                    <Product
-                        id="3254354345"
-                        title="Padded Office Desk Chair with Armrests, Adjustable Height/Tilt, 360-Degree Swivel, 275Lb Capacity - Black"
-                        price={99.99}
-                        image="https://m.media-amazon.com/images/I/61v4APY-tIL._AC_SY450_.jpg"
-                        rating={5}
-                    />                        
+                <div className="home__row">
                     <Product
                         id="4903850"
-                        title="48 Pack AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
-                        price={5}
-                        image="https://m.media-amazon.com/images/I/71IdKRlm8+L._AC_SX425_.jpg"
-                        rating={5}
-                    />                        
-                    </div>
-
-                    <div className="home_row">
+                        title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
+                        price={199.99}
+                        rating={3}
+                        image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+                    />
                     <Product
                         id="23445930"
-                        title="HP 24mh FHD Monitor - Computer Monitor with 23.8-Inch IPS Display (1080p) - Built-In Speakers and VESA Mounting - Height/Tilt Adjustment for Ergonomic Viewing - HDMI and DisplayPort"
-                        price={223}
-                        image="https://m.media-amazon.com/images/I/91fAU6mxFsL._AC_SX679_.jpg"
+                        title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
+                        price={98.99}
                         rating={5}
+                        image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
                     />
-                    </div>
+                    <Product
+                        id="3254354345"
+                        title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
+                        price={598.99}
+                        rating={4}
+                        image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+                    />
+                </div>
+
+                <div className="home__row">
+                    <Product
+                        id="90829332"
+                        title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
+                        price={1094.98}
+                        rating={4}
+                        image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+                    />
+                </div>
             </div>
         </div>
     )

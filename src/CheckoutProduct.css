@@ -6,7 +6,6 @@
 
 .checkoutProduct__info {
   padding-left: 20px;
-  z-index: 1;
 }
 
 .checkoutProduct__info > button {
@@ -19,7 +18,7 @@
 
 .checkoutProduct__image {
   object-fit: contain;
-  width: 180px;
+  width: 117px;
   height: 180px;
 }
 
